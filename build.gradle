@@ -1,0 +1,8 @@
+apply plugin: 'idea'
+
+
+task build {
+    dependsOn gradle.includedBuild('interface').task(':build')
+    dependsOn gradle.includedBuild('server').task(':build')
+    dependsOn gradle.includedBuild('first-client').task(':build')
+}

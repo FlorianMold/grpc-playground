@@ -1,0 +1,11 @@
+rootProject.name = "grpc-playground"
+
+//Configure a composite build.
+//A proxy 'build' task is configured in the root project's build.gradle file.
+//It is important to unlink the subprojects in IntelliJ IDEA in the Gradle tool window, so that only the root project
+//is linked by IDEA. Otherwise, IDEA will complain about missing dependencies in the subproject(s).
+
+includeBuild 'interface'
+includeBuild 'server'
+includeBuild 'first-client'
+

@@ -1,0 +1,9 @@
+build/
+dist/
+.idea/
+.gradle/
+gradle/
+node_modules/
+gradlew
+gradlew.bat
+*.log
