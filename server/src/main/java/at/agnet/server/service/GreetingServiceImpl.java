@@ -6,8 +6,8 @@ import at.agnet.server.GreetingServiceGrpc;
 import io.grpc.stub.StreamObserver;
 import net.devh.boot.grpc.server.service.GrpcService;
 
-// similar to a rest controller.
-@GrpcService // Helps us identifying so that spring boot finds this as a service.
+// Similar to a rest controller.
+@GrpcService // Helps spring-boot to find this service.
 public class GreetingServiceImpl extends GreetingServiceGrpc.GreetingServiceImplBase {
 
     @Override
