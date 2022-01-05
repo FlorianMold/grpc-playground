@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package at.agnet.server;
+
+option java_multiple_files = true;
+option java_package="at.agnet.server";
+
+// Instead of writing a controller in spring-boot, we write a service definition
+// This interface project generates an interface of this service with the method greeting.
+service GreetingService {
+  /**
+   * This is a method of the greeting service, which takes a
+   * greeting-request as an input and returns a greeting-response.
+   */
+  rpc greeting(GreetingRequest) returns (GreetingResponse) {}
+}
+
+// Message is just like a pojo in java.
+
+// This is the request that is sent to the server.
+message GreetingRequest {
+  string message = 1; // The greeting request has a message on index 1.
+}
+
+// This is the response, which is sent back to the server.
+message GreetingResponse {
+  string message = 1;
+}
