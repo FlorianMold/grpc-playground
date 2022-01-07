@@ -14,9 +14,6 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-}
-
-test {
-	useJUnitPlatform()
+	implementation 'net.devh:grpc-client-spring-boot-starter:2.13.0.RELEASE'
+	implementation 'at.agnet:interface:0.0.1-SNAPSHOT'
 }
